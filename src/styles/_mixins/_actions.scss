@@ -1,0 +1,15 @@
+@mixin transitions($property, $time, $effect, $delay: 0ms) {
+  -webkit-transition: $property $time $effect $delay;
+  -moz-transition: $property $time $effect $delay;
+  -o-transition: $property $time $effect $delay;
+  -ms-transition: $property $time $effect $delay;
+  transition: $property $time $effect $delay;
+}
+
+@mixin rotation($value) {
+  -webkit-transform: rotate($value);
+  -moz-transform: rotate($value);
+  -ms-transform: rotate($value);
+  -o-transform: rotate($value);
+  transform: rotate($value);
+}

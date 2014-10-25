@@ -1,0 +1,43 @@
+@mixin box-roundedCorners($width) {
+  -moz-border-radius: $width;
+  -webkit-border-radius: $width;
+  border-radius: $width; /* future proofing */
+}
+
+@mixin box-roundedCornersAll($topleft, $topright, $bottomright, $bottomleft) {
+  -moz-border-radius: $topleft $topright $bottomright $bottomleft;
+  -webkit-border-radius: $topleft $topright $bottomright $bottomleft;
+  border-radius: $topleft $topright $bottomright $bottomleft; /* future proofing */
+}
+
+@mixin box-shadow($horizontalOffset, $verticalOffset, $blur, $color, $spread: 0) {
+  -moz-box-shadow: $horizontalOffset $verticalOffset $blur $spread $color;
+  -webkit-box-shadow: $horizontalOffset $verticalOffset $blur $spread $color;
+  box-shadow: $horizontalOffset $verticalOffset $blur $spread $color;
+}
+
+@mixin box-shadowInset($horizontalOffset, $verticalOffset, $blur, $color) {
+  -moz-box-shadow: inset $horizontalOffset $verticalOffset $blur $color;
+  -webkit-box-shadow: inset $horizontalOffset $verticalOffset $blur $color;
+  box-shadow: inset $horizontalOffset $verticalOffset $blur $color;
+}
+
+@mixin box-shadowInset3d($horizontalOffset, $verticalOffset, $blur, $color, $horizontalOffset2, $verticalOffset2, $blur2, $color2) {
+  -moz-box-shadow: inset $horizontalOffset $verticalOffset $blur $color, $horizontalOffset2 $verticalOffset2 $blur2 $color2;
+  -webkit-box-shadow: inset $horizontalOffset $verticalOffset $blur $color, $horizontalOffset2 $verticalOffset2 $blur2 $color2;
+  box-shadow: inset $horizontalOffset $verticalOffset $blur $color, $horizontalOffset2 $verticalOffset2 $blur2 $color2;
+}
+
+// put inner and outer box shadow on element to give it an 'embossed' look
+@mixin box-embossed($blur1, $spread1, $color1, $blur2, $spread2, $color2) {
+  -moz-box-shadow: inset 0 0 $blur1 $spread1 $color1, 0 0 $blur2 $spread2 $color2;
+  -webkit-box-shadow: inset 0 0 $blur1 $spread1 $color1, 0 0 $blur2 $spread2 $color2;
+  box-shadow: inset 0 0 $blur1 $spread1 $color1, 0 0 $blur2 $spread2 $color2;
+}
+
+@mixin box-sizing($boxSizing) {
+  box-sizing: $boxSizing;
+  -moz-box-sizing: $boxSizing;
+  -webkit-box-sizing: $boxSizing;
+}
+

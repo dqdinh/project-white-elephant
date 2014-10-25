@@ -1,0 +1,13 @@
+.DS_Store
+.sass-cache
+.tmp
+npm-debug.log
+build
+Desktop.ini
+node_modules
+src/bower_components
+src/styles/_vendor/_bower
+data
+coverage
+styleguide
+styleguide_assets/static/css/bootstrap.css

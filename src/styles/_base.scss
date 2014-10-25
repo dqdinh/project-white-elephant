@@ -1,0 +1,66 @@
+// Source -- https://github.com/philipwalton/solved-by-flexbox/blob/master/_sass/_base.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color: hsl(0, 0%, 25%);
+  font: 300 1em/1.333 $avenir-regular, sans-serif;
+  height: 100%;
+}
+
+h1 {
+  -webkit-font-kerning: normal;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h2 {
+  -webkit-font-kerning: normal;
+  font: 700 1.3em $avenir-demi, serif;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+pre,
+p {
+  margin: 0 0 1em;
+}
+
+pre,
+code {
+  font-family: "source-code-pro", monospace;
+}
+
+code {
+  color: #000;
+  font-size: .9em;
+  font-weight: normal;
+}
+
+pre > code {
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}

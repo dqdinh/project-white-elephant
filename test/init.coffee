@@ -1,0 +1,3 @@
+# Testing Karma
+
+require "./test"

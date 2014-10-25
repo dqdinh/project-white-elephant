@@ -1,0 +1,17 @@
+@mixin size-loadingHeight($height: 100px) {
+  height: auto;
+
+  &.loading {
+    height: $height;
+  }
+}
+
+@mixin size($height, $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin size-square($size) {
+  width: $size;
+  height: $size;
+}
