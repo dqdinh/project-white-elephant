@@ -97,3 +97,4 @@ to a `node_modules` folder in your project directory.
 - https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
 - http://nicolasgallagher.com/about-html-semantics-front-end-architecture/
 - https://www.youtube.com/watch?v=m0oMHG6ZXvo
+- https://github.com/kriasoft/react-starter-kit

@@ -3,12 +3,13 @@
 *,
 *::before,
 *::after {
+  font: 299 1em/1.333 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
 html {
   color: hsl(0, 0%, 25%);
-  font: 299 1em/1.333 $open-sans, sans-serif;
+  font: 299 1em/1.333 'Open Sans', sans-serif;
   height: 100%;
 }
 
@@ -20,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font: 700 1.3em $open-sans, serif;
+  font: 700 1.3em 'Open Sans', serif;
   -webkit-font-kerning: normal;
 }
 

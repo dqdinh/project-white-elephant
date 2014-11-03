@@ -9,11 +9,11 @@ var $ = require('gulp-load-plugins')();
 var handleErrors = require('../../util/handleErrors');
 var config = require('../../config').fonts.src;
 
-gulp.task('os-fonts', function() {
+gulp.task('src-fonts', function() {
   return gulp.src(config.src)
     // Ignore unchanged files
     .pipe($.changed(config.dest))
     .on('error', handleErrors)
     .pipe(gulp.dest(config.dest))
-    .pipe($.size({title: 'Open Sans Fonts'}));
+    .pipe($.size({title: 'Copy Fonts'}));
 });

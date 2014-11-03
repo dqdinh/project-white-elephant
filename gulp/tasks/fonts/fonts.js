@@ -8,5 +8,5 @@ var gulp = require('gulp');
 
 gulp.task('fonts', [
   'fa-fonts',
-  'os-fonts'
+  'src-fonts'
 ]);
