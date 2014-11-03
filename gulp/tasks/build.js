@@ -21,13 +21,12 @@ var runSequence = require('run-sequence');
 gulp.task('build', function() {
   runSequence(
               'copyBower',
-              'scss',
+              'styles',
               ['browserify',
                 'images',
                 'html',
-                'fa-fonts',
-                'coffee-lint',
-                'scss-lint'],
+                'fonts',
+                'coffee-lint'],
               'styleguide'
              );
 });

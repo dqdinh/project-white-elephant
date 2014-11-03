@@ -1,6 +1,7 @@
 /* Global */
-@import 'variables';
 @import 'z-index';
+@import 'fonts';
+@import 'variables';
 
 /* Bower */
 @import '_vendor/_bower/font-awesome';
@@ -10,7 +11,6 @@
 @import '_vendor/h5bp';
 
 /* style guide only */
-@import '_style-guide/demo';
 
 /* Mixins */
 @import '_mixins/breakpoints';
@@ -22,7 +22,6 @@
 @import '_utils/size';
 @import '_utils/color';
 @import '_utils/media';
-@import '_utils/spacing';
 
 /* Base */
 @import 'base';

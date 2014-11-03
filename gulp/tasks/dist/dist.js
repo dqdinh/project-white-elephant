@@ -12,7 +12,7 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
 gulp.task('dist', function() {
-  runSequence('styles',
+  runSequence('scss',
               'uncss',
               'browserify',
               ['minify-css', 'minify-js']);

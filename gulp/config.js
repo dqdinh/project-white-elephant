@@ -95,6 +95,10 @@ module.exports = {
     fa: {
       src: src + "/bower_components/fontawesome/fonts/**",
       dest: dest + "/fonts/"
+    },
+    src: {
+      src: src + "/fonts/**",
+      dest: dest + "/fonts/"
     }
   },
 

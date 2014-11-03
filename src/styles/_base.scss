@@ -8,7 +8,7 @@
 
 html {
   color: hsl(0, 0%, 25%);
-  font: 300 1em/1.333 $avenir-regular, sans-serif;
+  font: 299 1em/1.333 $open-sans, sans-serif;
   height: 100%;
 }
 
@@ -20,8 +20,8 @@ h1 {
 }
 
 h2 {
+  font: 700 1.3em $open-sans, serif;
   -webkit-font-kerning: normal;
-  font: 700 1.3em $avenir-demi, serif;
 }
 
 h3 {

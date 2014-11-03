@@ -14,6 +14,6 @@ var runSequence = require('run-sequence');
 gulp.task('styles', function() {
   runSequence(
     'scss',
-    'styleguide'
+    'scss-lint'
   );
 });

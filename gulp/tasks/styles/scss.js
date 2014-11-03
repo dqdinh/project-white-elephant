@@ -45,5 +45,6 @@ gulp.task('scss', function(){
       path.basename = config.outputName;
     }))
     .pipe(gulp.dest(config.dest))
-    .pipe($.size({title: 'scss'}));
+    .pipe($.size({title: 'scss'}))
+    .pipe(reload({stream: true}));
 });
