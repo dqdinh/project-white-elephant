@@ -1,6 +1,5 @@
 /* Global */
 @import 'z-index';
-@import 'fonts';
 @import 'variables';
 
 /* Bower */
@@ -24,6 +23,7 @@
 @import '_utils/media';
 
 /* Base */
+@import 'fonts';
 @import 'base';
 
 /* Components */

@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "jquery": "^2.1.0",
-    "bootstrap": "^3.2.0",
+    "jquery.cookie": "^1.4.1",
+    "lodash": "^2.4.1",
     "normalize-css": "^3.0.1",
     "html-inspector": "^0.8.1",
-    "fontawesome": "^4.2.0",
-    "suit": "^0.6.0"
+    "fontawesome": "^4.2.0"
   }
 }

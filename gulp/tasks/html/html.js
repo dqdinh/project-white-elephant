@@ -6,15 +6,15 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var handleErrors = require('../../util/handleErrors');
+var onError = require('../../util/onError');
 var config = require('../../config').html;
 
 gulp.task('html', function() {
   return gulp.src(config.src)
-    // Minify only HTML
-    .pipe($.if('*.html', $.minifyHtml()))
-    .on('error', handleErrors)
+    .pipe($.plumber({
+      errorHandler: onError
+    }))
+    .pipe($.minifyHtml())
     .pipe(gulp.dest(config.dest))
     .pipe($.size({title: 'HTML'}));
 });
-

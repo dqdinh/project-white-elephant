@@ -1,7 +1,12 @@
-###
-  Start after DOM is ready.
-###
+# @cjsx React.DOM
+'use strict'
+
 $ = require 'jquery'
+React = require 'react'
+HelloMsg = require './views/helloMsg'
 
 $(document).ready ->
-  console.log 'Started'
+  React.render(
+    <HelloMsg name="dave" />,
+    document.getElementById('hello-region')
+  )

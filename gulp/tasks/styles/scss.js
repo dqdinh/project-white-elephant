@@ -8,7 +8,6 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
-var handleErrors = require('../../util/handleErrors');
 var onError = require('../../util/onError');
 var glob = require('glob');
 var config       = require('../../config').scss;
