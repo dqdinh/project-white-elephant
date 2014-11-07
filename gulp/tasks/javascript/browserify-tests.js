@@ -16,7 +16,7 @@ var onError = require('../../util/onError');
 var source       = require('vinyl-source-stream');
 var config       = require('../../config').browserifyTest;
 
-gulp.task('browserifyTests', function() {
+gulp.task('browserify-tests', function() {
   var bundler = browserify(config.settings);
 
   var bundle = function() {

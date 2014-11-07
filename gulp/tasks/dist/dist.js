@@ -12,8 +12,9 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
 gulp.task('dist', function() {
-  runSequence('scss',
+  runSequence('clean-dist',
+              'scss',
               'uncss',
-              'browserify',
+              'browserify-dist',
               ['minify-css', 'minify-js']);
 });

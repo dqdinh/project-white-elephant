@@ -117,6 +117,21 @@ module.exports = {
     outputName: 'main.js'
   },
 
+  browserifyDist: {
+    settings: {
+      // Required watchify args
+      cache: {}, packageCache: {}, fullPaths: false,
+      // Specify the entry point of your app
+      entries: ['./src/javascript/main.coffee'],
+      // Add file extentions to make optional in your requires
+      extensions: ['.coffee'],
+      // Enable source maps.
+      debug: true,
+    },
+    dest: dest,
+    outputName: 'main.js'
+  },
+
   browserifyTest: {
     settings: {
       // Required watchify args

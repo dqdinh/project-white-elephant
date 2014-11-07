@@ -10,4 +10,5 @@ src/styles/_vendor/_bower
 data
 coverage
 styleguide
+dist
 styleguide_assets/static/css/bootstrap.css

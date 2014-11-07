@@ -22,11 +22,15 @@ gulp.task('build', function() {
   runSequence(
               'copyBower',
               'styles',
-              ['browserify',
+              [
+                'browserify',
                 'images',
                 'html',
-                'fonts',
-                'coffee-lint'],
+                // Include when cjsx is
+                // included in coffee-lint
+                //'coffee-lint',
+                'fonts'
+              ],
               'styleguide'
              );
 });

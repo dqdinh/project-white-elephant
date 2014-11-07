@@ -3,7 +3,7 @@
 
 $ = require 'jquery'
 React = require 'react'
-HelloMsg = require './views/helloMsg'
+HelloMsg = require './components/helloMsg'
 
 $(document).ready ->
   React.render(

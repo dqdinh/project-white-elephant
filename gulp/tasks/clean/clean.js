@@ -1,5 +1,5 @@
 /**
-  Clear node_modules and bower components directories.
+  Clear build/ and styleguide/
 */
 
 'use strict';
