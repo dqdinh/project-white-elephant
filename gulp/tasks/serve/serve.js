@@ -14,5 +14,6 @@ gulp.task('serve', ['setWatch', 'browserSync', 'browserify'], function () {
   gulp.watch('src/styles/**/*.scss', ['styles']);
   gulp.watch('src/images/**', ['images']);
   gulp.watch('src/fonts/**', ['fonts']);
-  gulp.watch('src/javascript/**/*.coffee', ['coffee-lint']);
+  // Include when cjsx is included in coffee-lint
+  //gulp.watch('src/javascript/**/*.coffee', ['coffee-lint']);
 });

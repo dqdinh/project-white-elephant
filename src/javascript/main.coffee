@@ -1,12 +1,12 @@
 # @cjsx React.DOM
-'use strict'
 
 $ = require 'jquery'
 React = require 'react'
-HelloMsg = require './components/helloMsg'
+AppRoutes = require './app-routes'
 
 $(document).ready ->
+  window.React = React
   React.render(
-    <HelloMsg name="dave" />,
-    document.getElementById('hello-region')
+    AppRoutes,
+    document.body
   )

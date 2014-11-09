@@ -98,7 +98,7 @@ module.exports = {
   },
 
   html: {
-    src: src + "/html/site/**/*.html",
+    src: src + "/html/**/*.html",
     dest: dest
   },
 

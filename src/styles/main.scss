@@ -1,6 +1,7 @@
 /* Global */
 @import 'z-index';
 @import 'variables';
+@import 'fonts';
 
 /* Bower */
 @import '_vendor/_bower/font-awesome';
@@ -23,8 +24,6 @@
 @import '_utils/media';
 
 /* Base */
-@import 'fonts';
 @import 'base';
 
 /* Components */
-

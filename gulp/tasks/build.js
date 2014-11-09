@@ -26,8 +26,7 @@ gulp.task('build', function() {
                 'browserify',
                 'images',
                 'html',
-                // Include when cjsx is
-                // included in coffee-lint
+                // Include when cjsx is included in coffee-lint
                 //'coffee-lint',
                 'fonts'
               ],

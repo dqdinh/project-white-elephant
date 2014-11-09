@@ -8,7 +8,7 @@
 
 html {
   color: hsl(0, 0%, 25%);
-  font: 299 1em/1.333 'Open Sans', sans-serif;
+  font-family: $contentFontFamily;
   height: 100%;
 }
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font: 700 1.3em 'Open Sans', serif;
+  font-family: $contentFontFamily;
   -webkit-font-kerning: normal;
 }
 
