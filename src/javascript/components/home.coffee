@@ -2,6 +2,8 @@
 
 React = require 'react'
 
-module.exports = React.createClass
+Home = React.createClass
   render: ->
-    <div></div>
+    <div>home</div>
+
+module.exports = Home

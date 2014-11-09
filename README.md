@@ -1,7 +1,7 @@
 # Project White Elephant
 
 ## Overview
-Coding platform for [www.projectwhiteelphant.com](www.projectwhiteelphant)
+Coding platform for [www.projectwhiteelephant.com](www.projectwhiteelephant)
 
 ## Frontend setup
 If you've never used Node or npm before, you'll need to install Node.
@@ -34,15 +34,13 @@ to a `node_modules` folder in your project directory.
 
 ## Workflow
 
-###1. Add HTML
-
-###2. Run Gulp to build and then serve a local instance of the help center.
+###1. Run Gulp to build and then serve a local instance of the help center.
 
   ```shell
   gulp; gulp serve
   ```
 
-###3. Open
+###2. Open
 
 - via localhost
   ```shell
@@ -54,9 +52,10 @@ to a `node_modules` folder in your project directory.
   open -a /Applications/Google\ Chrome.app [whatever external URL BS provides]
   ```
 
-###4. Code Away
+###3. Code Away
+- make modifications in src/
 
-###5. Distribution
+###4. Shipping
 - Minify JS and CSS into dist/
   ```
   gulp dist

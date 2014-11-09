@@ -3,8 +3,9 @@
 React = require 'react'
 mui = require 'material-ui'
 
-Master = React.createClass
+Layout = React.createClass
   render: ->
+    <div className='u-faint'>layout</div>
 
 
-module.exports = Master
+module.exports = Layout

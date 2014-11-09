@@ -10,3 +10,4 @@ $(document).ready ->
     AppRoutes,
     document.body
   )
+  console.log React.renderToStaticMarkup(AppRoutes)

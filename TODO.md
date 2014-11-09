@@ -12,6 +12,11 @@ TODO
 
 ### CSS
 [] Merge Useful Material UI CSS
+[] Generate static HTML with all the classNames used in various React components in order to use UnCSS
+  [x] test React.renderToStaticMarkup()
+    - would not work with conditional classNames
+  [] test running through React component source code and pulling out discrete
+  css class names
 
 ### METRICS
 [] Add google analytics
