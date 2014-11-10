@@ -17,10 +17,6 @@ gulp.task('copy-bower-css', function() {
     // Ignore unchanged files
     .pipe($.changed(config.dest))
     .pipe($.flatten())
-    .pipe($.rename({
-      prefix: "_",
-      extname: ".scss"
-    }))
     .pipe(gulp.dest(config.dest))
     .pipe($.size({title: "Copy Bower CSS"}));
 });

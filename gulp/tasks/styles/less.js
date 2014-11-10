@@ -9,9 +9,8 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var onError = require('../../util/onError');
-var glob = require('glob');
+var handleErrors = require('../../util/handleErrors');
 var config       = require('../../config').less;
-//var path = require('path');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -31,17 +30,15 @@ gulp.task('less', function(){
       errorHandler: onError
     }))
     .pipe($.changed(config.dest))
-    // generate sourcemaps
     .pipe($.sourcemaps.init())
-    // compile less
     .pipe($.less())
-    // add browser prefixes
-    .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
-    // concat into large file
+    .on('error', handleErrors)
+    // Less Hat breaks autoprefixer. For now we'll pick LH.
+    // In the future, switch to autoprefixer which will
+    // also allow linting to work.
+    //.pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe($.concat('main.css'))
     .pipe($.sourcemaps.write())
-    // Print error out to web page
-    .on('error', console.error.bind(console))
     .pipe(gulp.dest(config.dest))
     .pipe($.size({title: 'LESS'}))
     // stream css changes

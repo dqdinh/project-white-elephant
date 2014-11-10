@@ -77,7 +77,8 @@ module.exports = {
       outputName: 'main.min.js'
     },
     css: {
-      src: dest + "/main_filtered.css",
+      //src: dest + "/main_filtered.css",
+      src: dest + "/main.css",
       dest: dist,
       outputName: 'main.min.css'
     }

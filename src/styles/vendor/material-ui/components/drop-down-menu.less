@@ -1,6 +1,6 @@
 .mui-drop-down-menu {
 
-	* { .ease-out; }
+	* { .ease-out(); }
 
 	position: relative;
 	height: @desktop-toolbar-height;
@@ -60,14 +60,10 @@
 
 	.mui-menu {
 		.mui-menu-item {
-			transition: none;
-			padding-right: (@icon-size + (@desktop-gutter-less*2));
+			padding-right: (@icon-size + @desktop-gutter-less + @desktop-gutter-mini);
 			height: @desktop-drop-down-menu-item-height;
 			line-height: @desktop-drop-down-menu-item-height;
-
-			&:hover {
-				background-color: @menu-item-hover-color;
-			}
+      white-space: nowrap;
 		}
 	}
 
