@@ -9,9 +9,12 @@
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 
-gulp.task('serve', ['setWatch', 'browserSync', 'browserify'], function () {
-  gulp.watch('src/html/site/**/*.html', ['html']);
-  gulp.watch('src/styles/**/*.scss', ['styles']);
+gulp.task('serve', ['set-watch', 'browserSync', 'browserify'], function () {
+  gulp.watch('src/html/**/*.html', ['html']);
+  gulp.watch('src/styles/**/*.less', ['less']);
+  // TODO: Since style tasks include css linting, we
+  // will uncomment after first deploy
+  //gulp.watch('src/styles/**/*.less', ['styles']);
   gulp.watch('src/images/**', ['images']);
   gulp.watch('src/fonts/**', ['fonts']);
   // Include when cjsx is included in coffee-lint

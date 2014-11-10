@@ -20,8 +20,9 @@ var runSequence = require('run-sequence');
 
 gulp.task('build', function() {
   runSequence(
-              'copyBower',
-              'styles',
+              'copy-vendor-files',
+              'less',
+              //'styles',
               [
                 'browserify',
                 'images',

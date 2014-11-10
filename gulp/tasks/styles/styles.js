@@ -13,7 +13,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('styles', function() {
   runSequence(
-    'scss',
-    'scss-lint'
+    'less',
+    'less-lint'
   );
 });

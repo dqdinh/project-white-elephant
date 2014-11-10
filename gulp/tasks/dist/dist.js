@@ -13,7 +13,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('dist', function() {
   runSequence('clean-dist',
-              'scss',
+              'less',
               'uncss',
               'browserify-dist',
               ['minify-css', 'minify-js']);

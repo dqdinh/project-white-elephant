@@ -6,7 +6,8 @@
 
 var gulp = require('gulp');
 
-gulp.task('copyBower', [
+gulp.task('copy-vendor-files', [
   'html-inspector',
-  'copyBowerCSS'
+  'copy-mui-styles',
+  'copy-bower-css'
 ]);

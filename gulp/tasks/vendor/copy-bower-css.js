@@ -7,9 +7,9 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var onError = require('../../util/onError');
-var config = require('../../config').bower.css;
+var config = require('../../config').vendor.css;
 
-gulp.task('copyBowerCSS', function() {
+gulp.task('copy-bower-css', function() {
   return gulp.src([config.src, config.ignore])
     .pipe($.plumber({
       errorHandler: onError

@@ -6,7 +6,7 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var config = require('../../config').bower.htmlInspector;
+var config = require('../../config').vendor.htmlInspector;
 
 gulp.task('html-inspector', function() {
   return gulp.src(config.src)

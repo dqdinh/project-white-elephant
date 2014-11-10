@@ -1,5 +1,4 @@
 .DS_Store
-.sass-cache
 .tmp
 npm-debug.log
 build
@@ -11,4 +10,3 @@ data
 coverage
 styleguide
 dist
-styleguide_assets/static/css/bootstrap.css

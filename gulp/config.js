@@ -36,6 +36,7 @@ module.exports = {
     ]
   },
 
+  // TODO: Adopt to registure static React output
   uncss: {
     src: dest + "/main.css",
     dest: dest,
@@ -43,22 +44,30 @@ module.exports = {
     html: src + "/html/site/**/*.html"
   },
 
-  scss: {
-    src: src + "/styles/main.scss",
-    dest: dest,
-    outputName: "main"
+  less: {
+    src: src + "/styles/main.less",
+    dest: dest
   },
 
-  bower: {
+  vendor: {
+    mui: {
+      src: './node_modules/material-ui/docs/dist/less/**/*',
+      dest: src + '/styles/vendor/material-ui/'
+    },
     css: {
       src: src + '/bower_components/**/*.css',
       ignore: '!' + src + '/bower_components/**/*.min.css',
-      dest: src + '/styles/_vendor/_bower/'
+      dest: src + '/styles/vendor/bower/'
     },
     htmlInspector: {
       src: src + '/bower_components/html-inspector/html-inspector.js',
       dest: dest
     }
+  },
+
+  autoprefixer: {
+    src: dest + "/main.css",
+    dest: dist
   },
 
   minify: {
@@ -75,11 +84,8 @@ module.exports = {
   },
 
   lint: {
-    scss: {
-      src: [
-        src + '/styles/**/*.scss',
-        '!' + src + '/styles/_vendor/**'
-      ]
+    less: {
+      src: dest + "/main.css"
     },
     coffee: {
       src: src + "/javascript/**/*.coffee"

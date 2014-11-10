@@ -5,7 +5,9 @@ mui = require 'material-ui'
 
 Layout = React.createClass
   render: ->
-    <div className='u-faint'>layout</div>
-
+    <mui.AppCanvas>
+      <mui.AppBar>
+      </mui.AppBar>
+    </mui.AppCanvas>
 
 module.exports = Layout
