@@ -5,7 +5,7 @@ build
 Desktop.ini
 node_modules
 src/bower_components
-src/styles/_vendor/_bower
+src/styles/vendor
 data
 coverage
 styleguide

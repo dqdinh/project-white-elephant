@@ -21,8 +21,7 @@ var runSequence = require('run-sequence');
 gulp.task('build', function() {
   runSequence(
               'copy-vendor-files',
-              'less',
-              //'styles',
+              'styles',
               [
                 'browserify',
                 'images',

@@ -11,13 +11,10 @@ var gulp = require('gulp');
 
 gulp.task('serve', ['set-watch', 'browserSync', 'browserify'], function () {
   gulp.watch('src/html/**/*.html', ['html']);
-  gulp.watch('src/styles/**/*.less', ['less']);
+  gulp.watch('src/styles/**/*.styl', ['styles']);
   gulp.watch('src/images/**', ['images']);
   gulp.watch('src/fonts/**', ['fonts']);
 
-  // TODO: Since style tasks include css linting, we
-  // will uncomment after first deploy
-  //gulp.watch('src/styles/**/*.less', ['styles']);
   // Include when cjsx is included in coffee-lint
   //gulp.watch('src/javascript/**/*.coffee', ['coffee-lint']);
 });

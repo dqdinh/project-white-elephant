@@ -44,8 +44,8 @@ module.exports = {
     html: src + "/html/site/**/*.html"
   },
 
-  less: {
-    src: src + "/styles/main.less",
+  styl: {
+    src: src + "/styles/main.styl",
     dest: dest
   },
 
@@ -85,7 +85,7 @@ module.exports = {
   },
 
   lint: {
-    less: {
+    css: {
       src: dest + "/main.css"
     },
     coffee: {
