@@ -14,7 +14,7 @@ gulp.task('html', function() {
     .pipe($.plumber({
       errorHandler: onError
     }))
-    .pipe($.minifyHtml())
+    .pipe($.jade())
     .pipe(gulp.dest(config.dest))
     .pipe($.size({title: 'HTML'}));
 });

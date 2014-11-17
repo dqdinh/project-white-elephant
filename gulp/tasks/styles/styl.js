@@ -36,6 +36,7 @@ gulp.task('styl', function(){
    .pipe($.changed(config.dest))
    .pipe($.sourcemaps.init())
    .pipe($.stylus({
+     'include css': true,
      use:[
        axis(),
        jeet(),
@@ -44,8 +45,6 @@ gulp.task('styl', function(){
      ]
    }))
    .on('error', handleErrors)
-   //.pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
-   //.pipe($.concat('main.css'))
    .pipe($.sourcemaps.write())
    .pipe(gulp.dest(config.dest))
    .pipe($.size({title: 'Stylus'}))

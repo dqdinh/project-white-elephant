@@ -16,5 +16,5 @@ gulp.task('dist', function() {
               'styles',
               //'uncss',
               'browserify-dist',
-              ['minify-css', 'minify-js']);
+              ['minify-html', 'minify-css', 'minify-js']);
 });

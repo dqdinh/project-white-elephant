@@ -10,7 +10,7 @@ var browserSync = require('browser-sync');
 var gulp = require('gulp');
 
 gulp.task('serve', ['set-watch', 'browserSync', 'browserify'], function () {
-  gulp.watch('src/html/**/*.html', ['html']);
+  gulp.watch('src/html/**/*.jade', ['html']);
   gulp.watch('src/styles/**/*.styl', ['styles']);
   gulp.watch('src/images/**', ['images']);
   gulp.watch('src/fonts/**', ['fonts']);
