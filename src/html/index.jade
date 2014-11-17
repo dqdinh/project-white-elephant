@@ -6,33 +6,26 @@ html(lang='en')
     meta(name='description', content='Project White Elephant Clothing')
     title Project White Elephant
     link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet', type='text/css')
+    link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
     link(type='text/css', rel='stylesheet', href='./main.css')
     //-script(src='./main.js')
   body
     .header
       .home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed
-        a.pure-menu-heading(href="/") P.W.E
+        a.pure-menu-heading(href="/") Project White Elephant
         ul
           li
             a(href="#about") About
-          li
-            a(href="#facebook")
-              i.fa.fa-facebook-square
-          li
-            a(href="#instagram")
-              i.fa.fa-instagram
-          li
-            a(href="#instagram")
-              i.fa.fa-twitter
 
     .splash-container
       .splash
         h1.splash-head Project White Elephant
         p.splash-subhead Spring / Summer 2015
         p.splash-subhead.u-pushup
-          i.fa.fa-2x.fa-angle-down#about
+          a(href="#about")
+            i.fa.fa-2x.fa-angle-down
 
-    .content-wrapper
+    .content-wrapper#about
       .ribbon.l-box-lrg.pure-g
         .pure-u-1
           h2.is-center ABOUT
