@@ -34,8 +34,12 @@ gulp.task('styl', function(){
      errorHandler: onError
    }))
    .pipe($.changed(config.dest))
-   .pipe($.sourcemaps.init())
    .pipe($.stylus({
+     sourcemap: {
+       inline: true,
+       sourceRoot: '..',
+       basePath: 'css'
+     },
      'include css': true,
      use:[
        axis(),
@@ -44,8 +48,14 @@ gulp.task('styl', function(){
        autoprefixer({ browsers: AUTOPREFIXER_BROWSERS})
      ]
    }))
+   .pipe($.sourcemaps.init({
+     loadMaps: true
+   }))
+   .pipe($.sourcemaps.write('.', {
+     includeContent: false,
+     sourceRoot: '.'
+   }))
    .on('error', handleErrors)
-   .pipe($.sourcemaps.write())
    .pipe(gulp.dest(config.dest))
    .pipe($.size({title: 'Stylus'}))
    // stream css changes

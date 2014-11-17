@@ -5,15 +5,24 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='Project White Elephant Clothing')
     title Project White Elephant
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet', type='text/css')
     link(type='text/css', rel='stylesheet', href='./main.css')
-    script(src='./main.js')
+    //-script(src='./main.js')
   body
+    .header
+      .home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed
+        a.pure-menu-heading(href="/") P.W.E
+        ul
+          li
+            a(href="#about") About
     .splash-container
       .splash
+        h1.splash-head Project White Elephant
+        p.splash-subhead Spring / Summer 2015
     .content-wrapper
       .ribbon.l-box-lrg.pure-g
         .pure-u-1
-          h2.content-head.content-head-ribbon.is-center ABOUT
+          h2.is-center#about ABOUT
           p.
             PROJECT WHITE ELEPHANT IS AN APPAREL COMPANY THAT DESIGNS WITH BEAUTIFUL CLEANS
             LINES AND INFUSES THEM WITH THE REVERIES OFFERED BY ITS COLLABORATORS.
@@ -32,7 +41,9 @@ html(lang='en')
             THE SECOND IS A CAPSULE COLLECTION THAT IS SYNTHESIZED WITH EACH SEASON’S
             COLLABORATOR.
 
-          h2.content-head.is-center Contact Us: contact@projectwhiteelephant.com
+      .ribbon.l-box-lrg.pure-g
+        .pure-u-1
+          h2.is-center Coming 2015
 
-      .footer.l-box.is-center
+      .footer.l-box
         | © 2014 Project White Elephant
