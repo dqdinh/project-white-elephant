@@ -13,6 +13,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('dist', function() {
   runSequence('clean-dist',
+              'images-dist',
               'styles',
               //'uncss',
               'browserify-dist',

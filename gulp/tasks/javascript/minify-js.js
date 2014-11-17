@@ -11,6 +11,5 @@ gulp.task('minify-js', function() {
   return gulp.src(config.src)
     // Concatenate And Minify JavaScript
     .pipe($.uglify({ preserveComments: 'some' }))
-    .pipe($.rename(config.outputName))
     .pipe(gulp.dest(config.dest));
 });

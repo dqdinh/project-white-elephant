@@ -10,6 +10,5 @@ gulp.task('minify-css', function() {
   gulp.src(config.src)
     // Concatenate And Minify Styles
     .pipe($.csso())
-    .pipe($.rename(config.outputName))
     .pipe(gulp.dest(config.dest));
 });

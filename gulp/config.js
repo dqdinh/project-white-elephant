@@ -73,8 +73,7 @@ module.exports = {
   minify: {
     js: {
       src: dest + "/main.js",
-      dest: dist,
-      outputName: 'main.min.js'
+      dest: dist
     },
     html: {
       src: dest + "/index.html",
@@ -83,8 +82,7 @@ module.exports = {
     css: {
       //src: dest + "/main_filtered.css",
       src: dest + "/main.css",
-      dest: dist,
-      outputName: 'main.min.css'
+      dest: dist
     }
   },
 
@@ -99,7 +97,11 @@ module.exports = {
 
   images: {
     src: src + "/images/**/*",
-    dest: dest + "/images/"
+    dest: dest + "/images/",
+    dist: {
+      src: dest + "/images/**/*",
+      dest: dist + "/images/"
+    }
   },
 
   fonts: {
