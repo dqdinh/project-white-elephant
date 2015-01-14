@@ -1,8 +1,5 @@
 # Project White Elephant
 
-## Overview
-Coding platform for [www.projectwhiteelephant.com](www.projectwhiteelephant)
-
 ## Frontend setup
 If you've never used Node or npm before, you'll need to install Node.
 If you use homebrew, do:
